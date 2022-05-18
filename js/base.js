@@ -47,10 +47,12 @@ if( nombreKoder !== null ) {
 }
 
 // Convertir strings a numeros
-// let ageKoder = prompt('Dame tu edad', 30)
-// console.log(ageKoder)
-// let newAgeKoder = parseInt(ageKoder)
-// console.log(newAgeKoder)
+let ageKoder = prompt('Dame tu edad', 30)
+console.log(ageKoder)
+let newAgeKoder = parseInt(ageKoder)
+console.log(newAgeKoder)
+
+
 // pedir al usuario los grados celsius en su localidad
 // convertir ºC to ºF
 // celsius * 9/5 + 32
