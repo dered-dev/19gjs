@@ -29,7 +29,7 @@ let koderExample = 'Jorge'
 let nombreConcatenado = 'Hola ' + koderExample
 // console.log(nombreConcatenado)
 // template literals
-// placeholders
+// placeholders o marcadores
 // `string  ${variable} `
 
 const age = 30
