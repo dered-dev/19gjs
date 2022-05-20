@@ -7,4 +7,6 @@
 // .substring(start, end)
 // .slice(start, end)
 
+console.log('cambio str ')
+
 
