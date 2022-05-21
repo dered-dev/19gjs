@@ -76,3 +76,37 @@ for(let i = 0; i < fin; i++){
 
 
 
+
+
+
+
+// Ejercicios
+
+/**
+ * For
+ * Escribir un programa de arroje la suma de los multiplos de 3, 5 o 7 que hay entre 1 y 100
+ * 
+ */
+
+
+
+/**
+  * While
+  * Escribir un programa que le pida al usuario un numero
+  * que imprima en consola el numero dado si es positivo y pedir otro numero
+  * si el numero es negativo, salir del ciclo
+  * 
+  */
+
+
+/** 
+ * For
+ * Dado los siguientes 2 strings
+ * 'smtp'
+ * 'aeiou'
+ * Imprimir en consola las siguientes combinaciones
+ * -> sa, se, si, so , su 
+ * -> ma, me, mi, mo , mu 
+ * -> ta, te, ti, to , tu 
+ * -> pa, pe, pi, po , pu
+ */
