@@ -15,14 +15,17 @@
  * 3 x 10 = 30
  */
 
-const numberUser = parseInt( prompt('Dame un numero entre 1 y 10') )
-if(numberUser >= 1 && numberUser <= 10){
-    for(let i = 1; i <= 10; i++){
-        console.log(`${ numberUser } x ${i} = ${ numberUser * i } `)
-    } 
-} else {
-    console.error('Número inválido')
-}
+// const numberUser = parseInt( prompt('Dame un numero entre 1 y 10') )
+// if( numberUser >= 1 && numberUser <= 10 ){
+
+//     for(let i = 1; i <= 10; i++){
+//         console.log(`${ numberUser } x ${i} = ${ numberUser * i } `)
+//     } 
+// } else {
+// 	// console.log('Número inválido')
+//     console.warn('Número inválido')
+//     // console.error('Número inválido')
+// }
 
 
 /**
@@ -35,33 +38,33 @@ if(numberUser >= 1 && numberUser <= 10){
  * Vocales -> oauo
  */
 
-const phrase = prompt('Escribe una frase').toLowerCase()
-let vowels = ''
-let consonants = ''
-for(let i = 0; i < phrase.length; i++ ){
+// const phrase = prompt('Escribe una frase').toLowerCase()
+// let vowels = ''
+// let consonants = ''
+// for(let i = 0; i < phrase.length; i++ ){
     
-	if(phrase[i] !== ' ' && phrase[i] !== ',' && phrase[i] !== '.'){
-		if(
-			phrase[i] == 'a' || 
-			phrase[i] == 'e' || 
-			phrase[i] == 'i' || 
-			phrase[i] == 'o' || 
-			phrase[i] == 'u' || 
-			phrase[i] == 'á' || 
-			phrase[i] == 'é' || 
-			phrase[i] == 'í' || 
-			phrase[i] == 'ó' || 
-			phrase[i] == 'ú'
-		){
-			vowels += phrase[i]
-		} else {
-            console.log(phrase[i])
-			consonants += phrase[i]
-		}
-	}
-}
-console.log(vowels)
-console.log(consonants)
+// 	if(phrase[i] !== ' ' && phrase[i] !== ',' && phrase[i] !== '.'){
+// 		if(
+// 			phrase[i] == 'a' || 
+// 			phrase[i] == 'e' || 
+// 			phrase[i] == 'i' || 
+// 			phrase[i] == 'o' || 
+// 			phrase[i] == 'u' || 
+// 			phrase[i] == 'á' || 
+// 			phrase[i] == 'é' || 
+// 			phrase[i] == 'í' || 
+// 			phrase[i] == 'ó' || 
+// 			phrase[i] == 'ú'
+// 		){
+// 			vowels += phrase[i]
+// 		} else {
+//             console.log(phrase[i])
+// 			consonants += phrase[i]
+// 		}
+// 	}
+// }
+// console.log(vowels)
+// console.log(consonants)
 
 /**
  * 
@@ -72,12 +75,12 @@ console.log(consonants)
  * 
  */
 
-const evenRange = parseInt( prompt('Escribe un numero') )
-for(i = 1; i <= evenRange; i++){
-	if(i % 2 === 0){
-		console.log(i)
-	}
-}
+// const evenRange = parseInt( prompt('Escribe un numero') )
+// for(i = 1; i <= evenRange; i++){
+// 	if(i % 2 === 0){
+// 		console.log(i)
+// 	}
+// }
 
 
 /**
@@ -92,10 +95,18 @@ for(i = 1; i <= evenRange; i++){
 
  const nameUser = window.prompt('Escribe una palabra')
  let stringReversed = ''
- for(let i = nameUser.length - 1; i >= 0; i--){
-     stringReversed += nameUser[i]
- }
- console.log(stringReversed)
+//  console.log(stringReversed.length)
+
+//  'Hola' str -> aloh
+//  '0123' indices
+//  '3210' indices
+//  '1234' length
+let finCadena = nameUser.length - 1
+
+for( let i = finCadena; i >= 0; i-- ){
+	stringReversed += nameUser[i]
+}
+console.log(stringReversed)
 
 
-//  console.log(nameUser.split('').reverse().join(''))
+console.log(nameUser.split('').reverse().join(''))
