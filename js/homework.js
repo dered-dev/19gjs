@@ -1,53 +1,59 @@
-// Ejercicios
+
 
 /**
- * Ejercicio 1
- * Escribir un programa de arroje la suma de los multiplos de 3, 5 o 7 que hay entre 1 y 100
- * Resolver con For, While y do While
+ * Funcion que pida una palabra al usuario
+ * Invierta la palabra
+ * y la retorne en un alert
+ * reversedString('hola') -> 'aloh' 
+ */
+
+
+/**
+ * Funcion que pida 3 numeros como parametro
+ * 2 numeros obligatorios y 1 opcional con valor de 3
+ * Arroje la suma de esos 3 numeros
+ * Posibles resultados
+ * -> addThreeNumbers(3,4,5) -> 12
+ * -> addThreeNumbers(3,4) -> 10
+ * -> addThreeNumbers(3) -> 'Faltan datos'
+ * -> addThreeNumbers() -> 'Faltan datos'
+ */
+
+
+/**
+ * Funcion que pida al usuario los grados Centigrados en su localidad
+ * Convertirlos a grados fahrenheit
+ * Arrojar un alert con el resultado
+ * -> convertTemp(25) -> La temperatura es de 77 ºF
+ * -> convertTemp() -> 'Faltan datos'
  */
 
 
 
 /**
- * Ejercicio 2
- * Pedir el usuario 1 numero entre 1 y 100
- * sumar todos los numeros entre el 1 y este numero
- * Mandar un alert con el  total
- * Resolver con For, While y do While
- * p.ej. 5
- * ->  15
+ * Funcion que pida al usuario los grados Centigrados en su localidad
+ * Convertirlos a grados fahrenheit
+ * Arrojar un alert con el resultado
+ * -> convertTemp(25) -> La temperatura es de 77 ºF
+ * -> convertTemp() -> 'Faltan datos'
  */
+
 
 
 /**
- * Ejercicio 3
- * pedir una oracion al usuario
- * Contar las letras "a" y "e" y espacios,
- * Resolver con For, While y do While
- * 
- * p.ej. 'hola kodErs'
- * ->  A -> 1 
- * ->  E -> 1
- * ->  Espacios -> 1 
+ * Funcion que imprima las tablas del 1 al 10
  */
+
 
 
 /**
- * Ejercicio 4
- * Estudiar acerca del tema Funciones
- * ¿Qué son?
- * Parametros y argumentos de una funcion
- * Parametros de una funcion
- * Parametros opcionales
- * Parametros por defecto (default)
- * 
- * Referencias
- * https://developer.mozilla.org/es/docs/Web/JavaScript/Guide/Functions
- * https://www.programiz.com/javascript/function
- * 
+ * Funcion que pida al usuario un numero (N) entre 1 y 100 
+ * Mandar un alert con suma de 1 a N
+ * Valor por defecto 3
+ * addNumberLimit() -> 6
+ * addNumberLimit(4) -> 10
+ * addNumberLimit(5) -> 15
  */
-
-
 
 
 
