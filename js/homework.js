@@ -1,60 +1,28 @@
 
+/**
+ * Ejercicio 1 *Obligatorio
+ * Realizar una funcion que reciba como parametro 1 array
+ * Y devuelva un array con solo los elementos Pares de ese array
+ * p.ej.
+ * -> evenOnly( [1,2,3,4,18] ) -> [2,4,18]
+ * -> evenOnly( [10, 2, 5] ) -> [10,2]
+ * -> evenOnly() -> 'Se necesita un array'
+ * 
+ */
 
 /**
- * Funcion que pida una palabra al usuario
- * Invierta la palabra
- * y la retorne en un alert
- * reversedString('hola') -> 'aloh' 
+ * Ejercicio 2 *Opcional
+ * Funcion que reciba como parametro una array de strings
+ * y devuelva el primer y ultimo caracter de cada string
+ * p.ej.
+ * -> firstAndLast ( ['hola', 'mundo'] ) -> ['ha', 'mo']
  */
 
 
 /**
- * Funcion que pida 3 numeros como parametro
- * 2 numeros obligatorios y 1 opcional con valor de 3
- * Arroje la suma de esos 3 numeros
- * Posibles resultados
- * -> addThreeNumbers(3,4,5) -> 12
- * -> addThreeNumbers(3,4) -> 10
- * -> addThreeNumbers(3) -> 'Faltan datos'
- * -> addThreeNumbers() -> 'Faltan datos'
+ * Ejercicio 3
+ * Estudiar todos los métodos de Array
+ * https://www.w3schools.com/jsref/jsref_obj_array.asp
+ * https://www.programiz.com/javascript/library/array
+ * 
  */
-
-
-/**
- * Funcion que pida al usuario los grados Centigrados en su localidad
- * Convertirlos a grados fahrenheit
- * Arrojar un alert con el resultado
- * -> convertTemp(25) -> La temperatura es de 77 ºF
- * -> convertTemp() -> 'Faltan datos'
- */
-
-
-
-/**
- * Funcion que imprima las tablas del 1 al 10
- */
-// control de tabla 1x5
-for(i= 1; i<= 10; i++){
-    for(j= 1; j<= 10; j++){
-        console.log(`${i} x ${j} = ${ i * j}`)
-    }
-}
-
-
-
-/**
- * Funcion que pida al usuario un numero (N) entre 1 y 100 
- * Mandar un alert con suma de 1 a N
- * Valor por defecto 3
- * addNumberLimit() -> 6
- * addNumberLimit(4) -> 10
- * addNumberLimit(5) -> 15
- */
-
-
-
-
-
-
-
-
