@@ -31,18 +31,14 @@
 
 
 /**
- * Funcion que pida al usuario los grados Centigrados en su localidad
- * Convertirlos a grados fahrenheit
- * Arrojar un alert con el resultado
- * -> convertTemp(25) -> La temperatura es de 77 ºF
- * -> convertTemp() -> 'Faltan datos'
- */
-
-
-
-/**
  * Funcion que imprima las tablas del 1 al 10
  */
+// control de tabla 1x5
+for(i= 1; i<= 10; i++){
+    for(j= 1; j<= 10; j++){
+        console.log(`${i} x ${j} = ${ i * j}`)
+    }
+}
 
 
 
@@ -54,6 +50,9 @@
  * addNumberLimit(4) -> 10
  * addNumberLimit(5) -> 15
  */
+
+
+
 
 
 

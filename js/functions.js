@@ -111,6 +111,20 @@ console.log(addNumbers (numberOne, numberTwo, numberThree))
 
 
 
+function test(a, b = 5 ) {
+    console.log(a,b)
+    // validamos datos vacios
+    // null, undefined, NaN
+    if( a && b ){
+        return a + b
+    } else {
+        console.error('Error')
+    }
+}
+
+
+
+
 
 
 
