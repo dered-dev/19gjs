@@ -39,5 +39,15 @@ console.log(arrReversed)
 
 // metodos de array
 // arr.push(item)
-// .push() -> agregar nuevo item al array al final
+// .push() -> Agregar nuevo item al array al final
 // .pop() -> Elimina nuevo item al array
+// .reverse()
+// .unshift()
+// 
+
+
+
+
+
+
+

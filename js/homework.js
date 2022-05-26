@@ -10,6 +10,24 @@
  * 
  */
 
+ const evenOnly = arr => {
+    if(arr && arr.length > 0){
+        let arrayEven = []
+    
+        for(i = 0; i < arr.length; i++){
+            let item = arr[i]
+            if(item % 2 === 0) {
+                arrayEven.push(item)
+            }
+        }
+    
+        return arrayEven
+    } else {
+       return 'Se necesita un array'
+    }   
+ }
+
+
 /**
  * Ejercicio 2 *Opcional
  * Funcion que reciba como parametro una array de strings
@@ -17,6 +35,19 @@
  * p.ej.
  * -> firstAndLast ( ['hola', 'mundo'] ) -> ['ha', 'mo']
  */
+
+ const firstAndLast = arrStrings => {
+
+    let arrayToFill = []
+    for(i = 0; i < arrStrings.length; i++){
+        let item = arrStrings[i]
+        let newString = ` ${ item.slice(0,1)}${item.slice( item.length - 1) }`
+        arrayToFill.push(newString)
+    }
+    return arrayToFill
+ }
+
+
 
 
 /**
