@@ -26,8 +26,33 @@
  * 
  * additionMultiArr(  [	[1,2,3] , [1,3,2] , [3,2,1] ] )
  * -> 18
- * 
  */
+
+
+const additionMultiArr = (arregloDeArreglos) => {
+
+    let counter = 0
+    arregloDeArreglos.forEach( (arreglo) => {
+        arreglo.forEach( (numero) => {
+            counter += numero
+        })
+    })
+
+    return counter
+}
+
+additionMultiArr(  [	
+        [
+            1,
+            2,
+            3
+        ] , 
+        [1,3,2] , 
+        [3,2,1] 
+    ] )
+
+ 
+
 
 /**
  * 
@@ -91,3 +116,12 @@ let pedidos = [
 
 
 
+
+
+let ingredientes = ['chile', 'jitomate', 'cebolla', 'ajo']
+
+const asar = (ingrediente) => {
+    return ingrediente + 'Asado'
+} 
+ingredientes.map( asar ) 
+//-> [chileCocido, jitomateCocido, cebollaCocida, ajoCocido]

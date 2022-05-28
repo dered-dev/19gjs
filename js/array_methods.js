@@ -79,4 +79,38 @@ console.log(newArray)
 
 
 
-//
+'string'.toLowerCase().slice(2)
+
+let nombres =  ['jorge','ana','ivan','sergio','oscar' ]
+// filtrar .filter()
+// capitalizar .map() .forEach()
+let filtrados = nombres
+    .filter( (nombre, index, arr) => {
+        if(
+            nombre.charAt(0) === 'a' || 
+            nombre.charAt(0) === 'e' || 
+            nombre.charAt(0) === 'i' || 
+            nombre.charAt(0) === 'o' || 
+            nombre.charAt(0) === 'u' 
+        ){
+            return nombre
+        }
+    })
+    .map( (nameFiltered ) => {
+        let firstletter = nameFiltered.charAt(0).toUpperCase()
+        let restName = nameFiltered.substring(1).toLowerCase()
+
+        return firstletter +  restName
+        
+    })
+    .reverse()
+    .join('/')
+
+console.log(filtrados)
+
+
+
+
+
+
+
