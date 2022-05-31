@@ -1,48 +1,17 @@
+
 /**
- * Tarea
- * REalizar los siguientes 3 ejercicios
+ * Solucionar 3 ejercicios minimo de esta lista
+ * https://twisty-smash-3d2.notion.site/Ejercicios-M-todos-de-Array-abdcdc3c3d254ba686f9a8df7fc805ae
  * 
  */
 
-/**
- * 1. funcion con .reduce()
- * capitalizeNames( ['jorge','lUis', 'marcOs', 'mario'] )
- * -> ['Jorge','Luis', 'Marcos', 'Mario']
- */
 
 /**
- * 2. funcion con .reduce()
- * Dado un array de numeros, filtras solo los pares
- * filterEvens( [2,3,4,5] )
- * -> [2,4]
+ * 
+ * Estudiar el tema de Objetos
+ * https://www.programiz.com/javascript/object
+ * https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Global_Objects/Object
+ * https://www.freecodecamp.org/espanol/news/javascript-crear-objecto-como-definir-objetos-en-js/
+ * https://www.w3schools.com/js/js_objects.asp
+ * 
  */
-
-/**
- * 3. funcion con .reduce()
- * Dado un array de numeros, obtener la suma de solo los elementos positivos
- * addAllPositives( [ 1, -4, 12, 0, -3, 29, -150] )
- * -> 42
- */
-
-
-/**
- * 4. Estudiar Objetos y métodos de objetos
- *
- */
-
-
-/**
- * Opcional
- * funcion con .reduce()
- * Dado un array de palabras, filtras las que son palindromos
- * onlyPalindrome( ['oso','pedro', 'jorge', 'seres'] )
- * -> ['oso','seres']
- */
-
-
-
-
-
-
-
-
