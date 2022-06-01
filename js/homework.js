@@ -18,7 +18,7 @@
 }
 
 const employesAndTotal = ( obj ) => {
-    
+
 }
 
 
@@ -45,12 +45,10 @@ let koder = {
 }
 
 
-
-
-
 /**
  * Estudiar los metodos de objetos
  * https://www.w3schools.com/js/js_object_methods.asp
  * https://www.digitalocean.com/community/tutorials/how-to-use-object-methods-in-javascript
  * https://www.programiz.com/javascript/library/object/assign
+ * 
  */
