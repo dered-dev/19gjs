@@ -15,23 +15,33 @@
         lastName: 'Camarillo',
         age: 30,
         generation: 6,
-        modulos: ['js','node js', 'cloud'],
+        modulos: ['js','node js', 'cloud'], 
     },
     {
         name: 'Erik',
         lastName: 'Gutierrez',
         age: 20,
         generation: 15,
-        modulos: ['js'],
+        modulos: ['Node'], 
     },
     {
         name: 'Sara',
         lastName: 'Reveles',
         age: 24,
         generation: 12,
-        modulos: ['js'],
+        modulos: ['js'], 
     }
 ]
+
+koders.forEach((objCompleto, index, arrayObj) => {
+    // console.log(`
+    //     ${objCompleto.name} ${objCompleto.lastName}  
+    //     tiene ${objCompleto.age} años y es  
+    //     de la generacion ${objCompleto.generation}
+    // `)
+})
+
+
 
 /**
  * Del mismo array de koders
@@ -39,6 +49,18 @@
  * 
  */
 
+let totalAge = 0
+koders.forEach((objCompleto, index, arrayObj) => {
+    totalAge += objCompleto.age
+})
+console.log(totalAge)
+
+
+let totalAgeREd = koders.reduce( (acc, cv) => {
+    return acc + cv.age
+}, 0) 
+
+console.log(totalAgeREd)
 
 
 
@@ -64,6 +86,32 @@
         author: 'Suzanne Collins',
         title:  'Mockingjay: The Final Book of The Hunger Games', 
         readingStatus: false
-    }];
+    },
+    {
+        author: 'Suzanne Collins',
+        title:  'Mockingjay: The Final Book of The Hunger Games', 
+        readingStatus: false
+    }
+]
+
+let totalReading = library.reduce( (total, libro) => {
+    return libro.readingStatus ? total += 1 : total
+}, 0)
+
+console.log(totalReading)
+
+let authors = library.map( (author) => {
+    return author.author
+})
+console.log(authors)
+
+let books = library.map( (book) => {
+    return book.title
+})
+
+console.log(books)
+
+
+
 
 
