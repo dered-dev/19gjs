@@ -54,6 +54,9 @@
  *   - Generación 
  * 
  *   Opcional -Modulos cursados
+ * 
+ * Referencia: https://slack-files.com/TCRFJBKB6-F03J4CBCBA7-8b1c39e7bc
+ * 
  */
 
 
