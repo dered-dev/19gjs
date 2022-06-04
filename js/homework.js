@@ -206,4 +206,11 @@ const albumes = [
     }
 ]
 
+/**
+ * Tarea
+ * Estudiar el tema JavaScript HTML DOM EventListener
+ * https://www.w3schools.com/js/js_htmldom_eventlistener.asp
+ * https://developer.mozilla.org/es/docs/Web/API/EventTarget/addEventListener
+ * https://www.freecodecamp.org/news/javascript-addeventlistener-example-code/
+ */
 
