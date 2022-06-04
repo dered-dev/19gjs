@@ -115,9 +115,9 @@ const tarea3 = () => {
 
 
 /**
- * Tarea 1
- * Optimizar todos los ejericios con innerHTML
- * y resolver los siguientes ejercicios
+ * Tareas
+ * 1. Optimizar todos los ejericios con innerHTML
+ * 2. Resolver el siguiente ejercicio
  */
 
 
