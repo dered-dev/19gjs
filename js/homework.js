@@ -59,5 +59,38 @@
  * 
  */
 
+/* 
+    <tr>
+        <td>Jorge</td>
+        <td>30</td>
+        <td>6</td>
+    </tr> 
+*/
+
+
+let tbody = document.querySelector('tbody')
+koders.forEach( (koder, index, arr) => {
+
+    let tr = document.createElement('tr')
+    let tdName = document.createElement('td')
+    tdName.textContent = koder.name
+    tr.appendChild(tdName)
+    let tdAge = document.createElement('td')
+    tdAge.textContent = koder.age
+    tr.appendChild(tdAge)
+    let tdGen = document.createElement('td')
+    tdGen.textContent = koder.generation
+    tr.appendChild(tdGen)
+    console.log(tr)
+    tbody.appendChild(tr)
+    
+})
+
+
+
+
+
+
+
 
 
