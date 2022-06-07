@@ -217,38 +217,35 @@ const albumes = [
 // DOm events
 // 
 
-let template = albumes.reduce((acc, cv) => {
-  return acc += `
-    <div class="col">
-      <div class="card">
-        <img src="${cv.url}" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">${cv.id}</h5>
-          <p class="card-text">${cv.title}</p>
+
+// document.getElementById('first__item').classList.remove('active')
+
+const loadAlbumes = () => {
+  let template = albumes.reduce((acc, cv) => {
+    return acc += `
+      <div class="col">
+        <div class="card">
+          <img src="${cv.url}" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">${cv.id}</h5>
+            <p class="card-text">${cv.title}</p>
+          </div>
         </div>
       </div>
-    </div>
-  `
-}, '')
+    `
+  }, '')
+  
+  document.querySelector('.cards__albumes').innerHTML = template
+} 
+
+const loadFinished = () => {
+  loadAlbumes()
+}
 
 
-let templateFor = ''
-albumes.forEach( (cv)=> {
-  templateFor += `
-  <div class="col">
-    <div class="card">
-      <img src="${cv.url}" class="card-img-top" alt="...">
-      <div class="card-body">
-        <h5 class="card-title">${cv.id}</h5>
-        <p class="card-text">${cv.title}</p>
-      </div>
-    </div>
-  </div>
-`
-})
 
-console.log(templateFor)
-document.querySelector('.cards__albumes').innerHTML = templateFor
+
+
 
 
 
