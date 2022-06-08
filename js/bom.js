@@ -43,7 +43,3 @@
 
 
 
-// AJAX
-// que es?
-// Diferentes formas de implementarlo
-// 
