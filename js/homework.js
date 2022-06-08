@@ -362,11 +362,13 @@ const printUserList = (usersFiltered) => {
 
   document.getElementById('users__filtered').innerHTML = allUserLayout
 }
+
+
 // cuando cargue la pagina, cargar todos los usuarios
-document.addEventListener('DOMContentLoaded',  printUserList(users))
+document.addEventListener('DOMContentLoaded',  printUserList(users) )
 
 let inputSearch = document.getElementById('filter__user')
-inputSearch.addEventListener('keyup', () => {
+inputSearch.addEventListener('change', () => {
   // obtener el valor a buscar
   let searchTerm = inputSearch.value
   // Filtrar los usuarios
@@ -377,7 +379,12 @@ inputSearch.addEventListener('keyup', () => {
   printUserList(usersFiltrados)
 })
 
-
+// blur
+// click
+// keyup
+// DOMContentLoaded
+// focus
+// change
 
 
 
