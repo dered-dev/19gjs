@@ -7,6 +7,8 @@
  * .forEach()
  */
 
+// traer los usuario por AJAX
+// XHR
 let users = [
   {
     "id": 1,
@@ -368,7 +370,7 @@ const printUserList = (usersFiltered) => {
 document.addEventListener('DOMContentLoaded',  printUserList(users) )
 
 let inputSearch = document.getElementById('filter__user')
-inputSearch.addEventListener('change', () => {
+inputSearch.addEventListener('keyup', () => {
   // obtener el valor a buscar
   let searchTerm = inputSearch.value
   // Filtrar los usuarios
