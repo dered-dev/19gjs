@@ -60,7 +60,7 @@ primerPeticion.onload = (response) => {
 
 // Send a request
 // GET, POST, DELETE, PATCH, PUT
-primerPeticion.open("GET", "https://jsonplaceholder.typicode.com/posts", false)
+primerPeticion.open("GET", "https://jsonplaceholder.typicode.com/users", false)
 // console.log(primerPeticion)
 primerPeticion.send()
 // console.log(primerPeticion)
