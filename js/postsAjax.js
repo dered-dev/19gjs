@@ -18,23 +18,51 @@ const printPosts = (posts) => {
   
     document.querySelector('.all__posts').innerHTML = postsLayout
 }
+const printUserList = (usersFiltered) => {
+    let allUserLayout = usersFiltered.reduce((acc, user, idx, arr) => {
+      return acc += `
+      <a href="#" class="list-group-item list-group-item-action " aria-current="true">
+        <div class="d-flex w-100 justify-content-between">
+          <h5 class="mb-1">${user.name}</h5>
+        </div>
+        <p class="mb-1">${user.phone}</p>
+        <small>${user.email}</small>
+      </a>
+      `
+    }, '')
+  
+    document.querySelector('.all__posts').innerHTML = allUserLayout
+}
+const getInfo  = (url, callback) => {
 
-
-// Create an XMLHttpRequest object
-const xhrPosts = new XMLHttpRequest()
-xhrPosts.onload = (response) => {
-    if(response.target.status >= 200 && response.target.status <= 399) {
-        if(response.target.responseText  != ''){
-            let posts = JSON.parse(response.target.responseText)
-            printPosts(posts)
+    // Create an XMLHttpRequest object
+    const xhrPosts = new XMLHttpRequest()
+    xhrPosts.onload = (response) => {
+        if(response.target.status >= 200 && response.target.status <= 399) {
+            if(response.target.responseText  != ''){
+                let data = JSON.parse(response.target.responseText)
+                console.log(data)
+                callback(data)
+            }
         }
     }
+    xhrPosts.open("GET", url, false)
+    xhrPosts.send( )
 }
 
-// GET, DELETE 
-// POST, PATCH, PUT
-xhrPosts.open("GET", "https://jsonplaceholder.typicode.com/posts", false)
-xhrPosts.send( )
+let selector = document.querySelector('#typeurl')
+selector.addEventListener('change', () => {
+    if(selector.value == 'posts'){
+        getInfo('https://jsonplaceholder.typicode.com/posts', printPosts )
+    } else if(selector.value == 'users') {
+        getInfo('https://jsonplaceholder.typicode.com/users', printUserList )
+    }
+})
+
+
+
+
+
 
 
 
