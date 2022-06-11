@@ -44,7 +44,10 @@
 const printAllPosts = (allPosts) => {
     let template = ''
     for( post in allPosts) {
-        let { title, body, date } = allPosts[post]
+        console.log(post)
+        // destrucuracion de objetos
+        let { title, body, date  } = allPosts[post]
+
         template += `
             <div class="col-12 col-md-3">
                 <div class="card" >
@@ -52,6 +55,10 @@ const printAllPosts = (allPosts) => {
                         <h5 class="card-title">${title}</h5>
                         <p class="card-text">${body}</p>
                         <p class="card-text">Last updated ${date}</p>
+
+                        <a href="/updatepost.html?idpost=${post}" class="link-primary">Editar</a>
+                        <a href="#" class="link-dark">Ver post</a>
+
                     </div>
                 </div>
             </div>
@@ -63,3 +70,4 @@ const printAllPosts = (allPosts) => {
 
 ajaxXHR(printAllPosts, '/posts/.json', 'GET')
   
+
