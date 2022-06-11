@@ -39,3 +39,27 @@
 // let body = document.querySelector('#elemento').value
 // let date = document.querySelector('#elemento').value
 
+
+// tarea 1
+const printAllPosts = (allPosts) => {
+    let template = ''
+    for( post in allPosts) {
+        let { title, body, date } = allPosts[post]
+        template += `
+            <div class="col-12 col-md-3">
+                <div class="card" >
+                    <div class="card-body">
+                        <h5 class="card-title">${title}</h5>
+                        <p class="card-text">${body}</p>
+                        <p class="card-text">Last updated ${date}</p>
+                    </div>
+                </div>
+            </div>
+        `
+    }
+    document.querySelector('.all__posts').innerHTML = template
+
+}
+
+ajaxXHR(printAllPosts, '/posts/.json', 'GET')
+  
