@@ -17,8 +17,10 @@ const xhttp = new XMLHttpRequest()
 xhttp.open( 'GET', `https://koders19gjs-default-rtdb.firebaseio.com/koders/${idKoder}.json`, true)
 xhttp.onload = function(data) {
     if(data.target.status >= 200 && data.target.status <= 399){
+
         let response = JSON.parse(data.target.response)
         let { name, age, biography, bootcamp } = response
+
         let template = `
                 <div class="col-12 col-sm-6">
                 <div class="card">
@@ -38,4 +40,5 @@ xhttp.send()
 
 // cuando el response este listo
 // pintar la informacion del koder en un card
+
 

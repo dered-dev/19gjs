@@ -61,6 +61,7 @@ xhttp.onload = function(data) {
                     <p class="card-text">${biography.slice(0, 20)}...</p>
                     <p class="card-text">${bootcamp}</p>
                     <a href="/interior.html?koderkey=${key}" class="btn btn-link">ver koder</a>
+                    <a href="/updatekoder.html?koderkey=${key}" class="btn btn-link">Editar koder</a>
                 </div>
               </div>
           </div>
@@ -71,20 +72,4 @@ xhttp.onload = function(data) {
     }
 }
 xhttp.send()
-
-
-
-
-
-
-
-
-
-let obj = {
-  prop1:'val1',
-  prop2:'val1'
-}
-
-
-obj.prop1 = 'fake'
 
