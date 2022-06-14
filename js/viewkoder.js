@@ -22,14 +22,14 @@ xhttp.onload = function(data) {
         let { name, age, biography, bootcamp } = response
 
         let template = `
-                <div class="col-12 col-sm-6">
-                <div class="card">
-                <div class="card-body">
-                    <h5 class="card-title">${name} ${age} años</h5>
-                    <p class="card-text">${biography.slice(0, 20)}...</p>
-                    <p class="card-text">${bootcamp}</p>
-                    <a href="/index.html" class="btn btn-link">Ver todos los koders</a>
-                </div>
+            <div class="col-12 col-sm-4 ">
+                <div class="card shadow rounded">
+                    <div class="card-body">
+                        <h4 class="card-title">${name} </h4>
+                        <p class="card-text"><b>${age} años</b></p>
+                        <p class="card-text">${biography}</p>
+                        <p class="card-text">Bootcamp: ${bootcamp}</p>
+                    </div>
                 </div>
             </div>
         `
