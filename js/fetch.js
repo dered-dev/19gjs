@@ -21,13 +21,15 @@
 
 
 // peticiones GET
-fetch('https://koders19gjs-default-rtdb.firebaseio.com/koders/.json')
+fetch('https:/ssskoders19gjs-default-rtdb.firebaseio.com/koders/.json')
 .then( response => {
-    return response.json()
+    if (!response.ok) {
+        throw new Error(`Algo salio mal, status: ${response.status} ${response.statusText} type: ${response.type}`)
+    } else {
+        return response.json()
+    }
 })
 .then( (response) => {
-    console.log(response)
-    // listar koders
     let template = ''
     for(koder in response) {
         let {name} = response[koder]
@@ -35,13 +37,9 @@ fetch('https://koders19gjs-default-rtdb.firebaseio.com/koders/.json')
             <li>${name}</li>
         `
     }
-
     document.querySelector('#lista__koders').innerHTML = template
-
-
 }).catch( err => {
-    console.log(err.error)
-
+    console.log(err)
 })
 
 
