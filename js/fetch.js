@@ -1,23 +1,8 @@
 
-
-// fetch('http://example.com/movies.json')
-// .then(response => response.json())
-// .then(data => console.log(data))
-// .catch( error => {
-//     console.log(error)
-// })
-
 // fetch()
 // promesa 
 // 1. pendiente
 // 2. Resuelta / Rechazada
-
-// const fetch = () => {
-//     return new Promise((resolve, reject)=> {
-//         resolve('todo ok')
-//         reject('todo mal')
-//     })
-// }
 
 
 // peticiones GET
