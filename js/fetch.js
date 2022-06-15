@@ -21,7 +21,7 @@
 
 
 // peticiones GET
-fetch('https:/ssskoders19gjs-default-rtdb.firebaseio.com/koders/.json')
+fetch('https://koders19gjs-default-rtdb.firebaseio.com/koders/.json')
 .then( response => {
     if (!response.ok) {
         throw new Error(`Algo salio mal, status: ${response.status} ${response.statusText} type: ${response.type}`)
@@ -30,6 +30,7 @@ fetch('https:/ssskoders19gjs-default-rtdb.firebaseio.com/koders/.json')
     }
 })
 .then( (response) => {
+    console.log(response)
     let template = ''
     for(koder in response) {
         let {name} = response[koder]
