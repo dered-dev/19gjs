@@ -46,14 +46,174 @@ let koders = [
     }
 ]
 
+// Acciones que se ejecutan en un futuro
+
+// Pendiente
+// REsultado: completada, rechazada
+
 const getKoders = () => {
     return new Promise( (resolve, reject) => {
+        // timer
         setTimeout( () => {
             // resolve(koders)
             reject( new Error('Error al obtener los datos'))
         }, 1500)
     })
 }
+
+// let primerPromesa = new Promise( callback )
+let primerPromesa = new Promise( ( resolve, reject ) => {
+    setTimeout( () => {
+        resolve(koders)
+        //reject( new Error('Error al obtener los datos') )
+    }, 5000)
+})
+// cuando se cumpla la promesa, realiza esto
+// primerPromesa
+// .then( (responsePromesa) => {
+//     console.log(responsePromesa)
+// })
+
+// declaramos una promesa
+let entrarAlBar = new Promise( (resuelta, incumplida ) => {
+    let age = 18
+    if(age >= 18 ){
+        setTimeout( ()=> {
+            resuelta('Puedes entrar al Bar')
+        }, 3000)
+    } else {
+        setTimeout( ()=> {
+            incumplida('No puedes pasar al bar')
+        }, 3000)
+    }
+})
+
+const irAlBar = () => {
+    return new Promise( (resolve, reject ) => {
+        let age = 19
+        console.log('Verificando tu edad')
+        if(age >= 18 ){
+            setTimeout( () => {
+                console.log('Edad verificada')
+
+                resolve('Puedes entrar al Bar')
+            }, 3000)
+        } else {
+            setTimeout( () => {
+                reject('No puedes pasar al bar')
+            }, 3000)
+        }
+    })
+}
+
+// irAlBar()
+// .then( (response)=> {
+//     console.log(response)
+// })
+
+
+
+// llamar pizzeria
+const llamarPizzeria = () => {
+    return new Promise((resolve, reject) => {
+        setTimeout( () => {
+            resolve('Buenas noches...')
+            // reject('No contestaron en tu pizzeria')
+        }, 1000 )
+    }) 
+}
+
+// elegir la pizza
+const elegirPizza = () =>{
+    return new Promise((resolve, reject) => {
+        setTimeout( () => {
+            resolve('Pizza peperoni elegida')
+        }, 2000 )
+    }) 
+}
+// esperar pizza
+const esperarPizza = () =>{
+    return new Promise((resolve, reject) => {
+        setTimeout( () => {
+            reject( 'No llego la pizza')
+
+            // resolve('Esperando pizza....')
+
+        }, 2000 )
+    }) 
+}
+
+const pagarPizza = () =>{
+    return new Promise((resolve, reject) => {
+        setTimeout( () => {
+            resolve('pagando pizza $$$ ....')
+        }, 2000 )
+    }) 
+}
+
+const disfrutarPizza = () =>{
+    return new Promise((resolve, reject) => {
+        setTimeout( () => {
+            resolve('Deliciosa...')
+        }, 2000 )
+    }) 
+}
+
+// promise hell
+// llamarPizzeria()
+// .then( response => {
+//     console.log(response)
+//     elegirPizza()
+//     .then( responsePizza => {
+//         console.log(responsePizza)
+//         esperarPizza()
+//         .then( pizzaEntreda => {
+//             console.log(pizzaEntreda)
+//             pagarPizza()
+//             .then( dinero => {
+//                 console.log(dinero)
+//                 disfrutarPizza()
+//                 .then( disfruta => {
+//                     console.log(disfruta)
+//                 })
+//             })
+//         })
+//     })
+// })
+
+
+
+llamarPizzeria()
+.then( response => {
+    console.log(response)
+   return elegirPizza()
+}).then( ( response ) => {
+    console.log(response)
+    return esperarPizza()
+})
+.then( response => {
+    console.log(response)
+    return pagarPizza()
+})
+.then( response => {
+    console.log(response)
+    return disfrutarPizza()
+})
+.then( response => {
+    console.log(response)
+})
+.catch( ( error ) => {
+    console.log(error)
+    alert('Algo salio mal con tu pedido: ', error)
+})
+
+
+
+
+
+
+
+
 
 
 
@@ -106,59 +266,14 @@ const fetchDataAsync = async () => {
     } catch (error) {
         console.log(error)
     }
-    
 }
 
-fetchData()
+// fetchData()
 
 
+// Generar el proceso de inscripción
+// tomar como referencia 3 pasos
 
-// Generar el proceso de inscripcion
-const conocerKodemia = () => {
-    return new Promise( (resolve, reject) => {
-        setTimeout( () => {
-            resolve('Conociendo kodemia')
-        }, 3000)
-    })
-}
-
-const inscribir = () => {
-    return new Promise( (resolve, reject) => {
-        setTimeout( () => {
-            resolve('Inscrito')
-        }, 2000)
-    })
-}
-
-const primeraClase = () => {
-    return new Promise( (resolve, reject) => {
-        setTimeout( () => {
-            resolve('Bienvenido')
-        }, 3000)
-    })
-}
-
-// conocerKodemia()
-// .then( response => {
-//     console.log(response)
-//     inscribir().then( (res) => {
-//         console.log(res)
-//         primeraClase().then( resfinal => {
-//             console.log(resfinal)
-//         })
-//     }) 
-// })
-
-
-// conocerKodemia()
-// .then( response => {
-//     console.log(response)
-//     return inscribir()
-// })
-// .then( response => {
-//     console.log(response)
-//     return primeraClase()
-// })
-// .then( response => {
-//     console.log(response)
-// })
+// Conocer kodemia
+// Inscribirse
+// Tomar primera clase
