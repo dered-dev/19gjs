@@ -78,9 +78,9 @@ let post = {
 // Equipos
 
 const equipos = {
-    1: ['Abraham Covarrubias', 'Xavier Escamilla', ' Victor Reyes', 'Benjamin alvarado'],
+    1: ['noemi', 'Abraham Covarrubias', 'Xavier Escamilla', ' Victor Reyes', 'Benjamin alvarado'],
     2: ['Ernesto García' , 'Cristopher Soriano' , 'Fran Arteaga', 'Bere'],
-    3: ['Annie', 'Israel Morales' , 'Kike', 'Marco Rosales'],
-    4: ['Lenny pedraza', 'Brisa Lucia' , 'Lorena', 'Francisco Martínez']
+    3: ['Annie', 'Israel Morales' , 'Kike', 'Marco Rosales', ],
+    4: ['Lenny pedraza', 'Brisa Lucia' , 'Lorena', 'Francisco Martínez', 'Rodrigo']
 }
 
