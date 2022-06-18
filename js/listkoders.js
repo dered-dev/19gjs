@@ -22,7 +22,7 @@ xhttp.onload = function(data) {
                     <p class="card-text">Edad: ${age} años</p>
                     <p class="card-text">${biography.slice(0, 30)}...</p>
                     <a href="/interior.html?koderkey=${key}" class="btn btn-link ps-0">Ver koder</a>
-                    <a href="/updatekoder.html?koderkey=${key}" class="btn btn-link">Editar</a>
+                    <a href="/updatekoder.html?koderkey=${key}" class="btn btn-link">editar</a>
                 </div>
               </div>
           </div>
